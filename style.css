@@ -1,0 +1,115 @@
+html {
+  /* place footer at bottom of short and long pages */
+  height: 100%;
+
+  /* prevent font size from increasing in landscape mode */
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  background-color: white;
+  font-family: sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 0 0;
+  min-height: 100%;
+  position: relative;
+}
+
+header {
+  background-color: white;
+  color: black;
+  padding: 1rem 0;
+  width: 100%;
+}
+
+header a {
+  color: black;
+}
+
+main {
+  /* match height in footer */
+  padding-bottom: 80px;
+}
+
+main {
+  line-height: 1.5em;
+}
+
+main a {
+  color: #04d;
+}
+
+footer {
+  /* position at bottom of short and long pages */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  /* full width */
+  width: 100%;
+
+  /* match padding-bottom in main */
+  height: 60px;
+
+  /* center vertically */
+  display: flex;
+  align-items: center;
+
+  /* grey background */
+  background-color: #eee;
+}
+
+footer a {
+  color: #04d;
+}
+
+.wrapper {
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+hr {
+  border-top: 1px solid black;
+  border-bottom: none;
+}
+
+/* pad margins on larger screens */
+@media (max-width: 640px) {
+  .wrapper {
+    width: 90%;
+  }
+}
+
+.center {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.with-subtitle {
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+/* wrap long lines within pre tags, particularly useful on mobile */
+pre {
+  overflow: auto;
+  word-wrap: normal;
+  white-space: pre-wrap;
+}
+
+table {
+  border-collapse: collapse;
+  max-width: 100%;
+  width: 100%;
+}
+
+table, th, td {
+  border: 1px solid black;
+}
+
+td {
+  padding: 5px;
+}
